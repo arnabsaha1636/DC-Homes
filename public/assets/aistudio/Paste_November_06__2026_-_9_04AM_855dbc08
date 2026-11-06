@@ -1,0 +1,1910 @@
+# ULTIMATE GOOGLE AI STUDIO BUILD PROMPT
+
+## PROJECT: STAYWISE DC — THE AIRBNB DECISION ENGINE
+
+### 1. YOUR ROLE AND MISSION
+
+Act simultaneously as:
+
+- A world-class full-stack software engineer.
+- A senior UX/UI designer.
+- A Washington, DC short-term rental regulatory researcher.
+- A hospitality revenue-management expert.
+- A real estate investment analyst.
+- A financial modeling specialist.
+- A consumer behavior and marketing strategist.
+- A risk management consultant.
+- A product manager specializing in decision-support applications.
+- A quality assurance engineer.
+
+**Your mission is to BUILD a complete, beautiful, intelligent, interactive, functional web application called "StayWise DC."**
+
+It will help Washington, DC homeowners decide whether they should list their home or part of their home on Airbnb.
+
+The core question is:
+
+**"Can I legally list my home on Airbnb, how much money could I realistically make, what could go wrong, and is it worth my time and money?"**
+
+This is a university MBA assignment. The application will be evaluated on its usefulness to homeowners, originality, creativity, visual presentation, decision-making capabilities, analytical depth, and functionality.
+
+Create a product that looks and behaves like a polished commercial application, not a basic student calculator.
+
+**IMPORTANT: Actually implement the application. Do not merely describe it, create a presentation, provide pseudocode, or generate disconnected UI mockups.**
+
+The application must function from beginning to end.
+
+---
+
+## 2. FUNDAMENTAL DESIGN PHILOSOPHY
+
+The app must address five fundamental homeowner questions:
+
+1. **CAN I?** Is hosting legally permitted for my property and circumstances?
+2. **HOW MUCH?** How much money might I earn, after all costs?
+3. **WHAT COULD GO WRONG?** What are the financial, legal, operational, and personal risks?
+4. **IS IT BETTER THAN MY ALTERNATIVES?** Is Airbnb more attractive than long-term renting, mid-term renting, or not renting?
+5. **SHOULD I?** What is the recommended decision based on my individual situation?
+
+Most Airbnb calculators simply estimate revenue.
+
+StayWise DC must go much further by integrating legality, economics, homeowner preferences, operating workload, risk, alternative uses, and uncertainty into one decision-making experience.
+
+**Never automatically assume that a potentially profitable Airbnb is a good idea.**
+
+A property may generate attractive hypothetical profits but be legally ineligible, prohibited by its HOA, too demanding to manage, or financially risky.
+
+The app must explain those tradeoffs.
+
+---
+
+## 3. APPLICATION IDENTITY AND VISUAL DESIGN
+
+### Product name
+
+**StayWise DC**
+
+### Tagline
+
+"Your Home. Your Numbers. Your Decision."
+
+### Supporting statement
+
+"Discover whether Airbnb hosting in Washington, DC makes financial, legal, and personal sense."
+
+### Visual design
+
+Create a premium financial-technology dashboard aesthetic.
+
+Use:
+
+- Deep navy blue for trust and professionalism.
+- Rich teal for positive outcomes.
+- Warm gold for financial opportunities.
+- Soft white and light-gray backgrounds.
+- Amber for caution.
+- Muted red for risks and legal restrictions.
+- Sophisticated typography with readable financial figures.
+- Rounded cards, tasteful shadows, subtle gradients, and smooth interactions.
+- Attractive icons, interactive charts, property illustrations, and DC-specific visual elements.
+
+Consider a beautiful Washington, DC rowhouse illustration, a simplified Capitol skyline, and an elegant map-based experience.
+
+Use visually distinctive dashboard components rather than generic rectangular forms.
+
+### Navigation
+
+Include these primary sections:
+
+1. Home / Dashboard
+2. Property Profile
+3. DC Legal Eligibility
+4. Neighborhood & Market Insights
+5. Airbnb Revenue Estimator
+6. Financial Analysis
+7. Scenario Simulator
+8. Airbnb vs. Alternatives
+9. Risk & Lifestyle Assessment
+10. AI Decision Adviser
+11. Launch Roadmap
+12. Downloadable Decision Report
+
+Use a persistent progress indicator and a summary of the user's current estimated hosting outcome.
+
+Make the entire application responsive for desktop, tablet, and mobile.
+
+---
+
+# PART A — HOMEOWNER DISCOVERY
+
+## 4. INTERACTIVE HOMEOWNER ONBOARDING
+
+The experience should begin with an engaging question:
+
+**"What are you thinking of renting out?"**
+
+Show large selectable cards:
+
+- A spare bedroom while I continue living at home.
+- My entire home while I am away.
+- A basement or accessory unit.
+- A second or investment property.
+- I'm not sure yet.
+
+The app must then adapt subsequent questions to the user's chosen situation.
+
+### Property information questionnaire
+
+Collect:
+
+**Location**
+- DC neighborhood.
+- Ward, if known.
+- ZIP code.
+- Optional street address.
+- Optional proximity to Metro stations, tourist attractions, universities, and business districts.
+
+**Property characteristics**
+- Townhouse, condominium, apartment, detached home, rowhouse, or other.
+- Number of bedrooms and bathrooms.
+- Square footage.
+- Number of bedrooms available to guests.
+- Maximum expected guests.
+- Separate entrance availability.
+- Private or shared bathroom.
+- Kitchen access.
+- Parking availability.
+- Outdoor space.
+- Air conditioning and heating.
+- Internet and workspace.
+- Laundry facilities.
+- Accessibility features.
+- Furnished or unfurnished.
+- Pets allowed or not.
+- Noise limitations.
+- Safety equipment.
+
+**Owner circumstances**
+- Whether the homeowner owns the property personally.
+- Whether the property is their primary residence.
+- Whether it is an investment property.
+- Whether ownership is through a company or other entity.
+- Whether they live on-site during guest stays.
+- Whether they are eligible for DC's Homestead Tax Deduction.
+- Whether their HOA, condo association, or co-op permits short-term rentals.
+- Whether their mortgage agreement or insurer restricts hosting.
+- Whether they already have a DC short-term rental license.
+- Whether they have the necessary liability insurance.
+- Whether the property meets safety requirements.
+
+**Personal goals**
+- Extra monthly income.
+- Help pay mortgage expenses.
+- Cover property maintenance.
+- Monetize a spare bedroom.
+- Earn money while traveling.
+- Build a hospitality business.
+- Determine whether hosting is worth the effort.
+
+Allow the user to select multiple goals and rank their importance.
+
+### User experience requirements
+
+Provide:
+
+- A short 60-second assessment.
+- An optional detailed assessment.
+- Progress indicators.
+- Back and next navigation.
+- Ability to edit previous answers.
+- Helpful explanations beside unfamiliar terms.
+- "I'm not sure" options where appropriate.
+- A complete working demo without requiring registration.
+
+Do not require an exact address to produce a useful estimate.
+
+---
+
+# PART B — DC LEGAL ELIGIBILITY
+
+## 5. BUILD A DETAILED DC REGULATORY ENGINE
+
+This must be one of the application's central differentiators.
+
+**Before recommending hosting, check whether the homeowner's situation appears compatible with current DC short-term rental rules.**
+
+As of November 6, 2026, use the currently published regulatory framework as the initial reference, subject to verification.
+
+### Legal requirements to evaluate
+
+**A. Primary residence**
+
+Current published DC regulations generally require qualifying short-term rental property to be the homeowner's primary residence.
+
+Investigate ownership, primary-residence status, Homestead eligibility, and applicable exceptions.
+
+Do not automatically recommend an investment-property Airbnb simply because it could make money.
+
+**B. Hosted short-term rental**
+
+Where the qualifying host is present during guest stays:
+
+- Identify the relevant short-term rental license category.
+- Explain the current absence of an annual frequency cap for qualifying hosted rentals.
+- Apply the maximum permitted continuous stay rules.
+- Check property-specific conditions.
+
+**C. Vacation rental**
+
+Where the qualifying host is absent:
+
+- Identify the vacation rental endorsement.
+- Apply the general 90-night cumulative annual limit unless an official exemption has been granted.
+- Apply the maximum continuous stay rule.
+- Do not calculate unlimited annual Airbnb income for this category.
+
+**D. Special exemptions**
+
+Explain that limited exemptions from the 90-night restriction may exist for qualifying work-related travel or serious-health circumstances.
+
+Do not assume an exemption has been granted.
+
+Only adjust the legal cap when a user identifies an approved exemption and provides the approved number of permitted nights.
+
+**E. Licensing**
+
+Include:
+
+- Appropriate DC basic business license and short-term rental endorsement.
+- Licensing status.
+- Application requirements.
+- Certificate of Clean Hands eligibility.
+- License renewal.
+- Applicable fees and expiration.
+- License posting requirements.
+- Booking record retention.
+
+DC's DLCP currently lists a $99 two-year short-term rental license fee. Make this an editable, dated regulatory parameter rather than an eternal constant.
+
+**F. Safety requirements**
+
+Check:
+
+- Working smoke alarms.
+- Carbon monoxide detectors.
+- Fire extinguishers where required.
+- Safe emergency exits.
+- Occupancy restrictions.
+- Cleaning and sanitation.
+- Emergency contact availability.
+- Guest instructions.
+- Adequate insurance coverage.
+- Applicable building and fire safety requirements.
+
+**G. Insurance**
+
+There is a discrepancy requiring special treatment:
+
+- The DC DLCP guidance currently refers to $250,000 liability coverage.
+- The published DC Code section 30-201.02 states at least $500,000, subject to rulemaking.
+
+**Do not silently choose one and present it as certain.**
+
+Show an amber "Official sources require verification" warning, provide both source links, and direct the homeowner to confirm the currently applicable minimum with DLCP and their insurance provider.
+
+Do not mark the insurance requirement as definitively satisfied based on the lower figure.
+
+**H. HOA, condo, co-op, and private restrictions**
+
+Require evaluation of governing documents.
+
+If a verified prohibition exists, the app must not recommend proceeding until that restriction is resolved.
+
+**I. Tax and guest rules**
+
+Explain requirements for relevant transient lodging taxes, registration, booking records, permitted occupancy, and guest safety.
+
+**J. Regulatory changes**
+
+The Short-Term Rental Regulation Amendment Act of 2026, Bill B26-0647, has proposed expanding some eligibility rules.
+
+Treat a proposal as **pending legislation**, not enacted law, unless official current sources confirm otherwise.
+
+Present proposed changes in a separate informational section.
+
+Never apply unpassed future provisions to the main legal eligibility decision.
+
+### Regulatory decision output
+
+Show one of four clear statuses:
+
+- **Appears eligible to proceed with licensing**
+- **Potentially eligible — verification needed**
+- **Currently blocked by an identified requirement**
+- **Insufficient information**
+
+Every result must explain:
+
+- What requirements appear satisfied.
+- What requirements are unsatisfied.
+- What information is missing.
+- Why the result was reached.
+- What the homeowner should do next.
+- Which official sources support the answer.
+
+Never label a property "legally approved" unless an authorized official has actually approved it.
+
+### Creative feature: DC Legal Gate
+
+Display a visual decision tree showing how the homeowner's answers lead to the eligibility result.
+
+If blocked, offer a **"What would need to change?"** explanation.
+
+Examples:
+
+- Obtain a license.
+- Verify insurance.
+- Obtain association permission.
+- Confirm primary-residence eligibility.
+- Consider another legally permissible rental arrangement.
+
+Do not provide instructions for bypassing regulations.
+
+---
+
+# PART C — NEIGHBORHOOD AND MARKET ANALYSIS
+
+## 6. DC NEIGHBORHOOD OPPORTUNITY EXPLORER
+
+Build a market exploration interface with an interactive DC map if supported by available mapping services.
+
+Include recognizable DC neighborhoods such as:
+
+- Georgetown
+- Capitol Hill
+- Dupont Circle
+- Logan Circle
+- Adams Morgan
+- Shaw
+- Columbia Heights
+- Navy Yard
+- NoMa
+- Petworth
+- Bloomingdale
+- Foggy Bottom
+- Cleveland Park
+- Glover Park
+- Southwest Waterfront
+- Mount Pleasant
+- Brookland
+- Anacostia
+
+These are locations to explore, **not a ranking or claim about real profitability**.
+
+### Market characteristics
+
+Allow homeowners to examine:
+
+- Nearby transit.
+- Visitor attractions.
+- Restaurants and retail.
+- Universities.
+- Convention and business districts.
+- Tourist destinations.
+- Transportation connections.
+- Potential business-traveler convenience.
+- Potential tourist convenience.
+- Family-travel suitability.
+- Seasonality.
+- Local amenities.
+
+### Competition analysis
+
+Create a comparable-listing tool.
+
+Allow users to enter or import comparable property information:
+
+- Neighborhood.
+- Listing type.
+- Bedroom count.
+- Bathroom count.
+- Capacity.
+- Nightly price.
+- Cleaning fee.
+- Availability.
+- Estimated occupancy, if reliably known.
+- Amenities.
+- Evidence/source URL.
+- Date observed.
+
+Support CSV upload if practical.
+
+Calculate:
+
+- Median comparable nightly rate.
+- Price range.
+- Interquartile range where enough observations exist.
+- Comparable count.
+- Comparison against the homeowner's proposed price.
+- Low, medium, and high pricing scenarios.
+
+### CRITICAL MARKET DATA RULE
+
+Do not invent real Airbnb listings, live occupancy rates, competitor earnings, or neighborhood market averages.
+
+If no verified market dataset or authorized API is available:
+
+1. Provide a clearly labeled illustrative demonstration dataset.
+2. Permit manual homeowner input.
+3. Permit uploading real comparable data.
+4. Clearly state that the figures are assumptions.
+5. Explain how to obtain better estimates.
+
+All market metrics must have a data-quality label:
+
+- Verified source
+- User-provided
+- Illustrative assumption
+- Unavailable
+
+Do not imply that illustrative data is live market intelligence.
+
+### Visuals
+
+Create:
+
+- Interactive neighborhood exploration.
+- Comparable nightly-rate distributions.
+- Amenity comparison.
+- Property positioning chart.
+- Price versus estimated demand visualization.
+- Market-confidence indicator.
+
+---
+
+# PART D — REVENUE FORECASTING
+
+## 7. AIRBNB REVENUE CALCULATOR
+
+Build a financially rigorous estimator.
+
+### Homeowner inputs
+
+- Nightly price.
+- Weekday price.
+- Weekend price.
+- Seasonal pricing adjustments.
+- Available nights annually.
+- Expected occupancy of offered nights.
+- Average length of stay.
+- Expected cancellations not rebooked.
+- Cleaning fee charged to guests.
+- Additional optional guest charges.
+- Property capacity.
+- Platform service-fee structure.
+- License-related operating constraints.
+
+Allow every financial input to be edited using fields or sliders.
+
+### Core calculation
+
+Start with the following relationships:
+
+**Potential booked nights before legal restrictions:**
+
+Available nights × expected occupancy rate
+
+Adjust appropriately for cancellations that cannot be rebooked.
+
+**Actual modeled booked nights:**
+
+The lower of:
+
+- Expected booked nights.
+- Applicable legal annual maximum.
+
+For vacation rentals subject to the standard restriction, the annual total must not exceed 90 nights.
+
+For eligible hosted rentals, do not incorrectly apply the 90-night vacation-rental limit.
+
+**Nightly accommodation revenue:**
+
+Booked nights × average nightly rate
+
+**Expected reservation count:**
+
+Booked nights ÷ average length of stay
+
+Use the expected reservation count for cost forecasting and show clearly if fractional bookings are used as an expected-value estimate.
+
+**Cleaning-fee revenue:**
+
+Expected reservations × cleaning fee charged
+
+**Gross host booking revenue:**
+
+Accommodation revenue + cleaning-fee revenue + other applicable host charges
+
+Do not treat lodging taxes collected and remitted on behalf of tax authorities as ordinary host revenue.
+
+### Revenue outputs
+
+Show:
+
+- Expected monthly booked nights.
+- Expected annual booked nights.
+- Gross booking revenue.
+- Estimated platform fees.
+- Net payout before operating costs.
+- Annual net operating cash flow.
+- Effective net income per booked night.
+- Actual occupancy of offered nights.
+- Utilization of permitted nights.
+
+### Creative feature: 90-Night Limit Meter
+
+For applicable vacation rentals, show an interactive annual calendar or progress ring:
+
+"67 of 90 permitted nights used."
+
+Show remaining nights and how they affect maximum revenue.
+
+For hosted rentals, display the appropriate legal classification without imposing this limit.
+
+### Creative feature: Guest Price vs. Host Payout
+
+Display an illustrative guest booking receipt.
+
+Break down:
+
+- Nightly charges.
+- Cleaning charges.
+- Guest-facing service fees, if applicable.
+- Applicable lodging taxes.
+- Total guest price.
+- Host service fee.
+- Estimated host payout.
+
+Clearly distinguish money paid by guests, money retained by the platform, taxes, and money received by the homeowner.
+
+Support Airbnb's split-fee and single-fee arrangements with editable rates.
+
+Do not assume every host pays the same commission.
+
+---
+
+# PART E — REAL COST AND PROFIT ANALYSIS
+
+## 8. COMPLETE FINANCIAL MODEL
+
+The app must account for much more than gross Airbnb earnings.
+
+### Initial setup costs
+
+Include:
+
+- Furniture.
+- Beds and mattresses.
+- Appliances.
+- Kitchen equipment.
+- Linens and towels.
+- Smart locks.
+- Security equipment.
+- Smoke and carbon monoxide alarms.
+- Fire safety equipment.
+- Photography.
+- Decorating.
+- Repairs.
+- Initial deep cleaning.
+- License/application expenses.
+- Insurance adjustments.
+- Accessibility improvements.
+- Other startup expenses.
+
+### Variable operating costs
+
+Include:
+
+- Cleaning per reservation.
+- Laundry.
+- Toiletries.
+- Cleaning supplies.
+- Guest consumables.
+- Electricity.
+- Water.
+- Heating and cooling.
+- Utilities attributable to guest usage.
+- Wear and tear.
+- Repairs per guest night.
+- Maintenance reserve.
+- Platform charges.
+- Payment processing, if separately applicable.
+- Cancellation losses.
+- Additional hosting-related costs.
+
+### Fixed and recurring costs
+
+Include:
+
+- Incremental insurance.
+- Software subscriptions.
+- Professional cleaning arrangements.
+- Property-management retainers.
+- Security monitoring.
+- Internet upgrades.
+- License renewals.
+- Annual equipment replacement allowance.
+- Accountant or bookkeeping costs.
+- Other recurring hosting expenses.
+
+### Mortgage and property ownership costs
+
+Provide two separate analyses:
+
+**Incremental hosting profitability**
+
+Measures whether hosting adds cash flow to an already-owned and occupied home.
+
+Only count additional costs caused by hosting, plus relevant opportunity costs.
+
+**Full property cash-flow perspective**
+
+Allows homeowners to include applicable mortgage payments, property taxes, insurance, and other ownership cash expenses.
+
+Never count the same expense twice.
+
+Distinguish principal repayment from accounting profit, and do not confuse property cash flow with investment returns.
+
+### Financial outputs
+
+Build an interactive financial dashboard displaying:
+
+1. Gross annual revenue.
+2. Total operating costs.
+3. Platform fees.
+4. Net annual operating cash flow.
+5. Net monthly cash flow.
+6. First-year cash flow after startup costs.
+7. Break-even booked nights.
+8. Break-even nightly price.
+9. Startup-investment payback period, where meaningful.
+10. Return on incremental setup investment, where meaningful.
+11. Effective compensation per owner work hour.
+12. Cash buffer required.
+13. Revenue lost to legal restrictions.
+14. Highest expense categories.
+15. Financial downside exposure.
+
+Avoid presenting a return on the home's entire market value as though it were the return on a small spare-bedroom hosting operation.
+
+### Creative feature: Where Does My $100 Go?
+
+Create a beautiful interactive $100 revenue waterfall chart.
+
+Show how $100 of host revenue is distributed between:
+
+- Airbnb service fees.
+- Cleaning.
+- Utilities.
+- Supplies.
+- Repairs.
+- Management.
+- Other operating expenses.
+- Remaining cash flow.
+
+Make it visually obvious why gross revenue and net profit differ.
+
+Use assumptions consistent with the user's scenario.
+
+---
+
+# PART F — TAX ANALYSIS
+
+## 9. DC AND FEDERAL TAX EDUCATION
+
+Include a dedicated tax section.
+
+### Lodging taxes
+
+As of November 2026, DC's temporary transient-accommodations sales tax rate is 15.95%, with the extension currently published through September 30, 2027.
+
+Use it as a dated regulatory input, not a permanent assumption.
+
+Explain:
+
+- When relevant lodging taxes may apply.
+- Which taxes Airbnb may collect and remit.
+- Why guest-paid tax is not automatically host income.
+- What owners should verify if using additional booking platforms.
+- That tax obligations may change.
+
+### Federal income tax
+
+Explain potential treatment of:
+
+- Rental income.
+- Deductible hosting expenses.
+- Homeowner personal use.
+- Allocation between personal and rental use.
+- Depreciation questions.
+- Tax reporting.
+- Special rules for homes rented fewer than 15 days annually, when qualifying facts apply.
+
+Do not assume that every short-term rental qualifies for tax-free treatment under the fewer-than-15-days rule.
+
+### Tax interface
+
+Provide:
+
+- Editable estimated income-tax rate for planning.
+- Estimated pre-tax cash flow.
+- Illustrative after-income-tax cash flow.
+- Separate lodging-tax line.
+- Assumptions.
+- Explanatory warnings.
+- Links to official IRS and DC tax guidance.
+
+Never claim to provide a final tax liability calculation.
+
+Advise consultation with a qualified tax professional for individual circumstances.
+
+---
+
+# PART G — INTELLIGENT SCENARIO SIMULATION
+
+## 10. SCENARIO AND SENSITIVITY LAB
+
+This section should be one of the most visually impressive parts of the application.
+
+Create three default scenarios:
+
+**Conservative**
+- Lower occupancy.
+- Lower average nightly price.
+- Higher operating costs.
+- Cautious cancellation assumptions.
+
+**Base Case**
+- User's central assumptions.
+
+**Optimistic**
+- Higher attainable occupancy.
+- Higher achievable pricing.
+- Efficient operations.
+
+Make these adjustable.
+
+Do not present invented statistical probabilities as verified.
+
+### Interactive sensitivity variables
+
+Allow users to change:
+
+- Nightly rate.
+- Booking demand.
+- Available nights.
+- Cleaning cost.
+- Average stay length.
+- Management charges.
+- Platform fees.
+- Maintenance expense.
+- Cancellation loss.
+- Initial setup spending.
+- Insurance expense.
+
+All dashboard calculations must update instantly.
+
+### Required visualizations
+
+1. Profit versus occupancy line chart.
+2. Profit versus nightly price chart.
+3. Price-and-occupancy sensitivity heatmap.
+4. Best/base/worst cash-flow comparison.
+5. Expense-breakdown doughnut chart.
+6. Monthly cash-flow trend.
+7. Break-even visualization.
+8. Sensitivity tornado chart showing which assumptions most affect profit.
+
+### Creative feature: What Could Go Wrong?
+
+Include interactive one-click stress scenarios:
+
+- Airbnb demand drops 25%.
+- Cleaning costs rise 30%.
+- The homeowner has an unexpected $2,000 repair.
+- The property receives no bookings for one month.
+- The platform fee increases.
+- Management becomes necessary.
+- The owner can offer fewer nights.
+- A cancellation reduces revenue.
+- Initial furnishing costs double.
+
+Show the impact on annual profit and cash requirements.
+
+Explain the result in plain English.
+
+### Creative feature: Reverse Profit Solver
+
+Ask:
+
+"How much extra money do you want to make each month?"
+
+Provide an adjustable target, such as $500, $1,000, or $2,000 monthly.
+
+Calculate the occupancy or nightly rate needed to reach the goal.
+
+If the target cannot realistically be reached under the modeled legal night limit, state:
+
+**"This income target is not achievable under your current assumptions and legal operating limit."**
+
+Show exactly why.
+
+---
+
+# PART H — SEASONALITY AND DEMAND
+
+## 11. DC SEASONAL BOOKING PLANNER
+
+Build a 12-month booking forecast.
+
+Show potential differences in demand linked to:
+
+- Spring tourism.
+- Cherry blossom season.
+- Summer travel.
+- University graduation periods.
+- Conferences.
+- Business travel.
+- Holiday periods.
+- Major events.
+- Winter seasonality.
+- Other relevant DC visitor patterns.
+
+These are demand drivers to consider, not proof of specific bookings or prices.
+
+### Interactive calendar
+
+Create a monthly planning calendar showing:
+
+- Days available.
+- Personal-use days.
+- Forecast booked nights.
+- Remaining permitted nights.
+- Estimated nightly rates.
+- Expected revenue.
+- Cleaning turnovers.
+- Upcoming maintenance blocks.
+
+Allow the homeowner to block dates for personal use.
+
+Make seasonal assumptions editable.
+
+Ensure the total of all monthly booked nights reconciles with the annual forecast and never exceeds the applicable legal limit.
+
+### Creative feature: Best Nights to Offer
+
+Highlight dates or months with the strongest **modeled** opportunity based on the user's supplied demand and pricing assumptions.
+
+If live event or market data is unavailable, label results as illustrative rather than pretending they are live price recommendations.
+
+---
+
+# PART I — AIRBNB VS. ALTERNATIVES
+
+## 12. ALTERNATIVE RENTAL STRATEGY COMPARISON
+
+Homeowners should understand whether Airbnb is actually the best use of their available space.
+
+Build an interactive comparison between:
+
+1. Hosted Airbnb room rental.
+2. Qualifying vacation rental.
+3. Long-term rental.
+4. Mid-term furnished rental.
+5. Keeping the property exclusively for personal use.
+
+Compare only strategies relevant to the property and homeowner.
+
+### Comparison metrics
+
+Show:
+
+- Annual gross revenue.
+- Annual estimated cash flow.
+- Initial investment.
+- Annual workload.
+- Vacancy risk.
+- Income consistency.
+- Guest turnover.
+- Cleaning burden.
+- Property wear.
+- Personal privacy.
+- Flexibility.
+- Ability to use the property personally.
+- Financial downside.
+- Legal uncertainty.
+- Estimated income per owner work hour.
+
+### Legal warning
+
+Do not assume that a long-term or mid-term rental is automatically legal, licensed, or exempt from all other DC rules.
+
+Flag applicable licensing, landlord-tenant, zoning, and other legal questions as separate verification items.
+
+### Visualization
+
+Create a side-by-side interactive comparison table and a chart showing financial returns versus homeowner effort.
+
+### Creative feature: The Decision Frontier
+
+Create a scatter plot:
+
+- X-axis: homeowner work hours.
+- Y-axis: estimated annual net income.
+- Bubble size: initial investment required.
+- Bubble color: eligibility or verification status.
+
+Help homeowners see which permitted option might deliver the best balance between financial benefit and effort.
+
+---
+
+# PART J — RISK MANAGEMENT
+
+## 13. COMPREHENSIVE HOMEOWNER RISK ASSESSMENT
+
+Identify and explain the full range of meaningful risks.
+
+### Financial risks
+
+- Low booking demand.
+- Price competition.
+- Unexpected repairs.
+- Higher insurance costs.
+- Platform fee increases.
+- Property damage.
+- Excessive initial furnishing costs.
+- Negative cash flow.
+- Revenue seasonality.
+- Dependence on one booking platform.
+- Cash-flow interruptions.
+
+### Operational risks
+
+- Cleaning delays.
+- Guest complaints.
+- Emergency maintenance.
+- Last-minute cancellations.
+- Key and lock failures.
+- Wi-Fi failures.
+- Poor guest reviews.
+- Double bookings.
+- Housekeeping reliability.
+- Difficulty finding a local co-host.
+- Excessive time commitments.
+
+### Regulatory risks
+
+- Licensing violations.
+- Exceeding applicable rental-night limits.
+- Unsafe occupancy.
+- Insufficient insurance.
+- HOA violations.
+- Incorrect tax handling.
+- Misunderstanding guest-stay restrictions.
+- Regulation changes.
+
+### Personal and lifestyle risks
+
+- Reduced privacy.
+- Safety concerns.
+- Household disruption.
+- Family discomfort.
+- Noise.
+- Neighbors' concerns.
+- Guest access to personal areas.
+- Stress from emergency calls.
+- Security issues.
+- Loss of flexibility.
+
+### Property risks
+
+- Accidental damage.
+- Plumbing failures.
+- Fire.
+- Water leaks.
+- Theft.
+- Excessive wear and tear.
+- Damage caused by unauthorized activities.
+- Accessibility and guest-safety incidents.
+
+### Risk scoring
+
+Ask the homeowner to rate:
+
+- Their tolerance for financial uncertainty.
+- Their comfort with strangers in the home.
+- Available free time.
+- Ability to resolve emergencies.
+- Maintenance capacity.
+- Financial cushion.
+- Desire for personal privacy.
+- Willingness to manage guest complaints.
+
+Create an explainable risk matrix.
+
+Do not claim that subjective risk ratings are statistically calibrated probabilities.
+
+### Creative feature: Risk Radar
+
+Create a radar chart containing:
+
+- Financial resilience.
+- Legal readiness.
+- Operational readiness.
+- Privacy comfort.
+- Guest preparedness.
+- Time availability.
+
+Provide personalized actions to improve each dimension.
+
+---
+
+# PART K — THE REAL COST OF HOSTING TIME
+
+## 14. HOMEOWNER TIME-AND-EFFORT CALCULATOR
+
+Most investment calculators ignore the homeowner's labor.
+
+StayWise DC must quantify it.
+
+Ask the homeowner how much time they expect to spend on:
+
+- Guest communication.
+- Check-in coordination.
+- Cleaning.
+- Laundry.
+- Restocking.
+- Maintenance.
+- Accounting.
+- Scheduling.
+- Managing complaints.
+- Emergency calls.
+- Listing management.
+- Pricing changes.
+
+Calculate total expected monthly and annual hours.
+
+### Outputs
+
+- Annual hosting hours.
+- Net cash flow per owner work hour.
+- Imputed cost of owner labor.
+- Economic profit after charging for owner time.
+- Comparison with hiring a property manager.
+
+### Creative feature: Is Your Time Worth It?
+
+Ask the homeowner:
+
+"What is one hour of your free time worth to you?"
+
+Let them enter a value.
+
+Calculate:
+
+**Economic profit = cash-flow profit − (owner hours × value per hour)**
+
+Clearly distinguish this non-cash opportunity-cost measure from actual cash flow.
+
+---
+
+# PART L — AI-POWERED HOMEOWNER ADVISER
+
+## 15. INTEGRATE GOOGLE GEMINI AS AN INTELLIGENT DECISION ADVISER
+
+Build a genuine in-app AI assistant powered by Gemini through secure server-side API calls.
+
+Name it:
+
+**StayWise AI Adviser**
+
+It must understand the homeowner's currently entered information.
+
+### Questions it should answer
+
+Examples:
+
+- Is my specific hosting plan potentially legal in DC?
+- Why is my property marked as needing verification?
+- How much money could I make?
+- What is my break-even point?
+- What if bookings fall by 30%?
+- Should I rent a bedroom or my entire home?
+- Which expenses matter the most?
+- How can I improve my profit?
+- How can I reduce risks?
+- Does using a property manager make sense?
+- What is the biggest weakness in my hosting plan?
+- What needs to change before I launch?
+- What assumptions should I validate first?
+
+### AI response structure
+
+Every substantial recommendation should contain:
+
+1. **Short answer**
+2. **Why this matters**
+3. **Evidence from the homeowner's inputs**
+4. **Relevant calculations**
+5. **Risks or uncertainties**
+6. **Recommended next action**
+
+Use accessible, plain English.
+
+### AI safety and reliability
+
+The AI must:
+
+- Never invent local laws or financial statistics.
+- Never claim to have verified a license it has not checked.
+- Never override the deterministic financial engine.
+- Never silently assume legal exemptions.
+- Distinguish known information from assumptions.
+- Reference official regulatory sources.
+- Admit when information is unavailable.
+- Avoid guarantees about future returns.
+- Avoid discriminatory recommendations or targeting.
+
+The AI should interpret the application's calculations rather than hallucinating new ones.
+
+### Creative feature: AI Challenges Your Assumptions
+
+Add a button:
+
+**"Challenge My Airbnb Plan"**
+
+The AI should identify the three to five most consequential weaknesses or unknowns in the homeowner's analysis.
+
+For each weakness, provide:
+
+- Why it matters.
+- What could happen.
+- How much it could change the financial outcome when quantifiable.
+- What the homeowner should verify.
+- What could improve the situation.
+
+This is intended to make the app a critical-thinking tool, not a tool that merely encourages Airbnb hosting.
+
+---
+
+# PART M — THE FINAL DECISION ENGINE
+
+## 16. PERSONALIZED HOSTING READINESS SCORE
+
+Create a visually engaging decision dashboard.
+
+Provide separate dimensions:
+
+- Legal readiness.
+- Financial attractiveness.
+- Market evidence.
+- Operational readiness.
+- Risk tolerance compatibility.
+- Lifestyle compatibility.
+
+For factors requiring subjective weights, explain how the score is calculated.
+
+Allow the user to adjust the importance of financial returns, flexibility, personal time, and privacy.
+
+**IMPORTANT: Legal eligibility must be a hard gating condition.**
+
+Strong financial attractiveness cannot compensate for a known legal prohibition.
+
+### Final recommendation categories
+
+The app should provide one of these conclusions:
+
+- **Promising option — proceed with required checks**
+- **Potentially worthwhile — improve the plan**
+- **Financially unattractive under current assumptions**
+- **Do not list until compliance issues are resolved**
+- **More information needed**
+
+Each category should have a precise explanation.
+
+### Final recommendation card
+
+Show:
+
+**YOUR AIRBNB DECISION**
+
+- Property summary.
+- Regulatory classification.
+- Current compliance status.
+- Estimated annual gross revenue.
+- Estimated annual net cash flow.
+- First-year startup-adjusted cash flow.
+- Expected annual hosting hours.
+- Highest financial risk.
+- Biggest unresolved uncertainty.
+- Strongest available alternative.
+- Three recommended next steps.
+
+### Creative feature: What Would Change My Decision?
+
+The user clicks a button and receives a prioritized list of changes that could materially improve the outcome.
+
+For example:
+
+- Reduce cleaning costs.
+- Increase the realistic nightly price.
+- Lower startup investment.
+- Offer more legally permitted nights.
+- Hire a cleaner if owner time is the bottleneck.
+- Resolve association restrictions.
+- Explore an alternative rental strategy.
+
+Quantify the effect where possible.
+
+---
+
+# PART N — ACTIONABLE LAUNCH ROADMAP
+
+## 17. PERSONALIZED STEP-BY-STEP CHECKLIST
+
+If the owner appears eligible to proceed, generate a personalized launch plan.
+
+### Phase 1: Confirm eligibility
+
+- Verify primary-residence qualification.
+- Check current DLCP requirements.
+- Review governing documents.
+- Confirm insurance.
+- Review occupancy and safety requirements.
+
+### Phase 2: Financial preparation
+
+- Establish startup budget.
+- Calculate break-even.
+- Confirm realistic market pricing.
+- Create an emergency fund.
+- Set realistic profit goals.
+
+### Phase 3: Licensing and compliance
+
+- Obtain necessary business licensing.
+- Verify tax registration and responsibilities.
+- Confirm insurance documentation.
+- Install required safety equipment.
+- Prepare guest records and emergency contact procedures.
+
+### Phase 4: Property setup
+
+- Furnish guest areas.
+- Arrange cleaning.
+- Photograph the property.
+- Prepare an accurate listing.
+- Create house rules.
+- Install appropriate access controls.
+- Create maintenance procedures.
+
+### Phase 5: Launch and monitor
+
+- Publish only after required approvals.
+- Set initial pricing.
+- Monitor bookings.
+- Track legal-night utilization.
+- Track revenue and costs.
+- Monitor guest reviews.
+- Reassess financial performance.
+
+Create working checkboxes and progress indicators.
+
+Allow task completion status to persist locally.
+
+Do not automatically mark legal requirements complete.
+
+---
+
+# PART O — PROFESSIONAL DECISION REPORT
+
+## 18. GENERATE A DOWNLOADABLE REPORT
+
+Add a prominent button:
+
+**"Download My Airbnb Decision Report"**
+
+The report must contain:
+
+1. Executive summary.
+2. Property profile.
+3. Homeowner objectives.
+4. DC regulatory assessment.
+5. Market assumptions.
+6. Annual revenue projection.
+7. Operating cost breakdown.
+8. Net income and cash flow.
+9. Break-even analysis.
+10. Conservative/base/optimistic scenarios.
+11. Risk assessment.
+12. Airbnb versus alternatives.
+13. Lifestyle considerations.
+14. Key uncertainties.
+15. Final recommendation.
+16. Personalized next-step checklist.
+17. Data sources and last-reviewed dates.
+18. Important limitations and disclaimers.
+
+Include attractive tables, graphs, and clear calculations.
+
+Implement a working downloadable PDF if feasible. Otherwise provide a polished print-friendly report that can be saved as PDF through the browser.
+
+Support CSV export of the underlying financial model.
+
+Do not create a download button that does nothing.
+
+---
+
+# PART P — MBA-LEVEL CREATIVE FEATURES
+
+## 19. ADD THESE DISTINCTIVE FEATURES
+
+### Feature 1: Two Homeowners, Two Different Decisions
+
+Build a side-by-side comparison tool that demonstrates how two households with similar properties might reach different recommendations because of:
+
+- Primary-residence status.
+- Time availability.
+- Risk tolerance.
+- Household privacy preferences.
+- Setup budget.
+- Legal restrictions.
+
+### Feature 2: Interactive What-If Story
+
+Display a short story:
+
+"Imagine you rent out your DC home while traveling..."
+
+Let the user adjust nightly price, travel frequency, cleaning expense, and booking demand.
+
+Show immediate consequences.
+
+### Feature 3: Airbnb Reality Check
+
+Present three side-by-side numbers:
+
+- What guests pay.
+- What the host receives.
+- What the host actually keeps after modeled costs.
+
+### Feature 4: Financial Goal Feasibility
+
+The user sets a goal such as:
+
+"I want Airbnb to cover $750 of my mortgage every month."
+
+Show whether the target is feasible and what assumptions are necessary.
+
+### Feature 5: Lifestyle Compatibility Quiz
+
+Ask:
+
+- Are you comfortable with guests entering your home?
+- Can you respond to an issue at midnight?
+- Would you sacrifice weekend privacy?
+- Can you handle unexpected maintenance?
+- Are other household members comfortable with hosting?
+- Is stable income more important than potentially higher but variable income?
+
+Show tradeoffs, not simplistic personality judgments.
+
+### Feature 6: Host Readiness Passport
+
+Produce a shareable summary card with:
+
+- Legal status.
+- Economic readiness.
+- Operational readiness.
+- Major risk.
+- Next action.
+
+Do not imply government approval.
+
+### Feature 7: Decision Confidence Meter
+
+Estimate confidence based on the strength of the information entered:
+
+- Are nightly prices verified?
+- Are comparable properties documented?
+- Is demand based on actual data?
+- Have costs been entered?
+- Is licensing eligibility verified?
+- Has association permission been checked?
+
+A complete form with purely illustrative market assumptions should not receive a high evidence-confidence score.
+
+### Feature 8: Regulatory Change Simulator
+
+Provide a separate hypothetical tool:
+
+"What if DC's rental rules change?"
+
+Users may explore the financial effects of a changed night limit or eligibility rule.
+
+Clearly label this **hypothetical policy simulation** and never incorporate unpassed legislation into the current-law baseline.
+
+---
+
+# PART Q — APPLICATION ENGINEERING
+
+## 20. TECHNICAL IMPLEMENTATION
+
+Build the application using Google AI Studio's supported web-app environment.
+
+Preferred stack:
+
+- React.
+- TypeScript.
+- Tailwind CSS.
+- Recharts for financial graphs.
+- Lucide icons.
+- Accessible, reusable UI components.
+- A secure Node.js server route for Gemini API calls.
+- Local storage for anonymous demo persistence.
+- Optional mapping integration if Google Maps support is available.
+
+Use stable, compatible packages.
+
+Follow the existing Google AI Studio project configuration when appropriate.
+
+### Application architecture
+
+Organize the project into maintainable components and modules:
+
+- Property onboarding.
+- Legal rules engine.
+- Financial calculation engine.
+- Scenario engine.
+- Risk engine.
+- Market comparables.
+- AI assistant.
+- Decision logic.
+- Reporting.
+- Shared chart components.
+- Source metadata and configuration.
+
+### Calculation integrity
+
+All financial calculations must use deterministic TypeScript functions.
+
+The UI and AI must read from the same underlying calculation outputs.
+
+Do not duplicate conflicting financial logic across components.
+
+### Input validation
+
+Prevent:
+
+- Negative occupancy.
+- Occupancy exceeding 100%.
+- Negative nights.
+- Impossible reservation lengths.
+- Division by zero.
+- Invalid pricing.
+- Duplicate expenses.
+- Overcounting revenue.
+- Booked nights exceeding available nights.
+- Violations of applicable modeled legal-night caps.
+
+Display friendly validation errors.
+
+### Persistence
+
+Save the homeowner's inputs and analysis locally.
+
+Provide:
+
+- Save scenario.
+- Duplicate scenario.
+- Reset.
+- Compare saved scenarios.
+- Export.
+- Delete local data.
+
+Do not require an account for the demonstration.
+
+### AI integration
+
+Use Google Gemini with server-side credentials.
+
+Do not expose API keys in client-side code.
+
+Implement loading, success, and failure states.
+
+If the Gemini API is unavailable, all non-AI features must remain functional.
+
+### Accessibility
+
+Provide:
+
+- Keyboard-accessible controls.
+- Readable contrast.
+- Descriptive chart labels.
+- Accessible form fields.
+- Screen-reader-friendly status messages.
+- Mobile responsiveness.
+- Reduced-motion support where practical.
+
+### Data privacy
+
+Avoid collecting unnecessary personally identifiable information.
+
+Do not require full addresses.
+
+Keep homeowner financial scenarios private by default.
+
+Do not transmit exact address or personal financial information to AI services without clear disclosure and appropriate user consent.
+
+### Data integrity
+
+Never fabricate:
+
+- Live regulatory updates.
+- Property valuations.
+- Occupancy statistics.
+- Competitor listings.
+- Booking histories.
+- Real market prices.
+- API responses.
+- Licensing approval.
+- Geographic precision.
+
+Clearly label all demo data.
+
+---
+
+# PART R — FINANCIAL MODEL VALIDATION
+
+## 21. MANDATORY TEST CASES
+
+Test the application against these situations.
+
+**Test 1: Hosted spare room**
+
+A qualifying primary-residence homeowner rents a spare bedroom while present.
+
+Confirm that the app does not incorrectly impose the vacation-rental 90-night annual limit.
+
+**Test 2: Entire home while away**
+
+A qualifying primary-residence homeowner expects 200 booked nights while absent, without an approved exemption.
+
+The app must cap the modeled vacation-rental booked nights at 90 and explain the restriction.
+
+**Test 3: Non-primary investment property**
+
+An owner wants to operate a dedicated investment-property Airbnb.
+
+The app must flag current DC eligibility restrictions.
+
+It may still show hypothetical economics, but must clearly label the scenario as not presently verified to be legally eligible.
+
+**Test 4: Condo prohibition**
+
+A homeowner enters that the condo association prohibits short-term rentals.
+
+The application must flag this as a blocking issue even when the property appears financially attractive.
+
+**Test 5: Low demand**
+
+Occupancy falls sharply.
+
+Profit must decrease appropriately.
+
+Negative results must appear honestly.
+
+**Test 6: High cleaning expense**
+
+Cleaning costs exceed cleaning-fee revenue.
+
+The financial model must reflect the loss instead of treating the cleaning fee as pure profit.
+
+**Test 7: Different Airbnb fees**
+
+Switch between split-fee and single-fee models.
+
+Platform costs and host payouts must change correctly.
+
+**Test 8: Owner labor**
+
+Increase the hourly value of homeowner time.
+
+Economic profit must fall while operating cash flow remains unchanged.
+
+**Test 9: Zero bookings**
+
+All earnings should be zero and fixed costs should remain.
+
+No division-by-zero errors.
+
+**Test 10: Impossible income target**
+
+The homeowner requests an annual income target impossible within the legal-night limit.
+
+Display an honest infeasibility result.
+
+**Test 11: Seasonal reconciliation**
+
+The sum of monthly booked nights must equal the annual projection.
+
+No month may exceed available nights.
+
+**Test 12: Tax treatment**
+
+Lodging taxes collected from guests and remitted to the government must not incorrectly inflate host revenue.
+
+**Test 13: Legal uncertainty**
+
+An unresolved insurance requirement must show a verification warning, not a false compliance approval.
+
+**Test 14: PDF/report**
+
+Exported reports must reflect the currently selected homeowner scenario.
+
+**Test 15: Mobile usability**
+
+All major functionality must work on a mobile-sized screen.
+
+---
+
+# PART S — DEMONSTRATION EXPERIENCE
+
+## 22. INCLUDE A COMPLETE INTERACTIVE DEMO MODE
+
+Create at least four fictional homeowner profiles.
+
+All example financial data must be labeled illustrative.
+
+### Demo A: Capitol Hill Homeowner
+
+- Primary-residence townhouse.
+- Plans to rent the entire home while traveling.
+- Interested in additional vacation income.
+- Needs the annual vacation-rental limit correctly applied.
+
+### Demo B: Petworth Homeowner
+
+- Primary-residence rowhouse.
+- Plans to host guests in a spare bedroom while present.
+- Wants consistent supplementary income.
+- Has limited available time.
+
+### Demo C: Georgetown Condo Owner
+
+- Attractive potential nightly pricing.
+- Condo restrictions may prevent operation.
+- Demonstrates why profitable economics do not override compliance.
+
+### Demo D: Investor With a Second Property
+
+- Property is not the owner's primary residence.
+- Wants a full-time Airbnb operation.
+- Demonstrates the regulatory eligibility problem under the currently published rules.
+
+### Required demo behavior
+
+Every demo profile must:
+
+- Populate the complete app.
+- Produce a legal assessment.
+- Show financial forecasts.
+- Generate scenarios.
+- Display risk results.
+- Produce an explainable recommendation.
+- Support report generation.
+
+Make switching between profiles instantaneous.
+
+---
+
+# PART T — PRESENTATION MODE
+
+## 23. CREATE A PROFESSOR DEMONSTRATION EXPERIENCE
+
+Because this is an MBA assignment, include a built-in **"Guided Demo"** button.
+
+Create a concise guided walkthrough covering:
+
+**First: The problem**
+
+"Homeowners see Airbnb revenue estimates, but often don't know if hosting is legal, profitable after costs, or suitable for their lifestyle."
+
+**Second: The solution**
+
+"StayWise DC combines legal screening, financial modeling, market evidence, risk analysis, and homeowner preferences."
+
+**Third: The wow moment**
+
+Compare two sample properties and show how the recommendation changes.
+
+**Fourth: The key insight**
+
+"High revenue does not necessarily mean high profit — and high profit does not necessarily mean a good decision."
+
+**Fifth: The homeowner outcome**
+
+The user gets a recommendation, clear reasoning, and actionable next steps.
+
+Use interactive visual highlights rather than a static slide deck.
+
+---
+
+# PART U — OFFICIAL DATA AND SOURCES
+
+## 24. USE AUTHORITATIVE SOURCES
+
+Build a visible "Sources and Methodology" section.
+
+Include these reference sources:
+
+**DC short-term rental licensing**
+
+https://dlcp.dc.gov/page/operating-short-term-rental-district-columbia
+
+**DC statutory restrictions**
+
+https://code.dccouncil.gov/us/dc/council/code/sections/30-201.02
+
+**DC operating requirements and 90-night provisions**
+
+https://code.dccouncil.gov/us/dc/council/code/sections/30-201.06
+
+**DC short-term rental guide**
+
+https://dlcp.dc.gov/sites/default/files/dc/sites/DLCP/publication/attachments/Short-Term-Rental-Guide_0.pdf
+
+**DC tax changes**
+
+https://otr.cfo.dc.gov/release/notice-oct-1-2025-tax-changes
+
+**Airbnb occupancy tax information**
+
+https://www.airbnb.com/help/article/2300
+
+**Airbnb service-fee structures**
+
+https://www.airbnb.com/help/article/1857
+
+**IRS rental-property taxation guidance**
+
+https://www.irs.gov/publications/p527
+
+**DC proposed regulatory amendment**
+
+https://lims.dccouncil.gov/Legislation/B26-0647
+
+### Source-handling requirements
+
+For major claims:
+
+- Display the source.
+- Identify the relevant rule or assumption.
+- Include the date checked or last reviewed.
+- Separate verified statements from inferred information.
+- Highlight inconsistencies between official sources.
+- Provide links for users to verify.
+
+If live browsing is unavailable, do not claim sources have just been refreshed.
+
+Store source data in a maintainable configuration object for future updates.
+
+The app must clearly explain that regulatory and tax information can change and is not a substitute for professional advice or official licensing decisions.
+
+---
+
+# PART V — PRODUCT QUALITY REQUIREMENTS
+
+## 25. NON-NEGOTIABLE SUCCESS CRITERIA
+
+The finished app must meet all these conditions:
+
+1. A homeowner can start without signing up.
+2. The property questionnaire works.
+3. Property answers update subsequent sections.
+4. The legal eligibility engine works.
+5. The application distinguishes hosted and vacation rentals.
+6. Applicable annual night limits are enforced in the model.
+7. The financial calculator performs real calculations.
+8. Expenses are deducted correctly.
+9. Fee arrangements are customizable.
+10. Guest lodging taxes are not confused with host profit.
+11. Charts respond to user inputs.
+12. Multiple scenarios can be compared.
+13. Risk and lifestyle considerations influence the recommendation.
+14. Legal prohibitions override positive profit projections.
+15. Alternative strategies can be analyzed.
+16. The reverse-profit calculator detects impossible goals.
+17. The Gemini adviser can interpret actual inputs.
+18. Important calculations are understandable in plain English.
+19. Demo scenarios work.
+20. Reports can be exported or printed.
+21. The mobile interface is usable.
+22. All visible navigation buttons work.
+23. All data sources and major assumptions are explained.
+24. User-entered information is preserved appropriately.
+25. The app runs without critical errors.
+
+Do not leave empty components, placeholder pages, dead buttons, or features that falsely appear connected to live services.
+
+If an advanced feature cannot be supported reliably, create a clearly labeled functional fallback.
+
+---
+
+# PART W — DEVELOPMENT EXECUTION
+
+## 26. BUILD ORDER
+
+Implement the application in the following order:
+
+**Priority 1: Fully functional core**
+- App navigation.
+- Homeowner onboarding.
+- Legal screening.
+- Revenue calculator.
+- Cost and profit calculations.
+- Recommendation engine.
+
+**Priority 2: Decision intelligence**
+- Scenario analysis.
+- Sensitivity charts.
+- Risk assessment.
+- Alternatives comparison.
+- Goal feasibility.
+
+**Priority 3: Competitive differentiation**
+- Market exploration.
+- Seasonal calendar.
+- AI adviser.
+- Decision readiness.
+- Guided demo.
+
+**Priority 4: Professional finish**
+- Report export.
+- Refined UI.
+- Responsive design.
+- Accessibility.
+- Loading states.
+- Data validation.
+- Automated calculation tests.
+- Error handling.
+
+Implement as many of the complete requested features as possible, but prioritize a coherent, reliable app over an impressive-looking collection of broken features.
+
+After generating the files:
+
+1. Run the application.
+2. Resolve compilation errors.
+3. Check runtime errors.
+4. Test sample homeowners.
+5. Validate financial formulas.
+6. Verify regulatory decision paths.
+7. Verify the charts.
+8. Verify navigation.
+9. Verify Gemini integration or its fallback.
+10. Verify report export.
+11. Check desktop and mobile layouts.
+12. Correct any discovered issues.
+
+### FINAL INSTRUCTION
+
+**Do not stop after producing a project plan. BUILD THE ACTUAL WORKING APPLICATION NOW.**
+
+The final result must feel like a sophisticated, trustworthy, visually excellent decision-support product that a real Washington, DC homeowner would want to use.
+
+The most important feature is not the earnings estimate.
+
+It is the ability to give the homeowner an explainable answer to:
+
+**"Given my property, DC law, realistic revenue, operating costs, risks, available time, and personal preferences — should I actually become an Airbnb host?"**
+
+Make that answer the emotional, analytical, and visual centerpiece of the entire application.

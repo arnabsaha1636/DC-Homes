@@ -1,0 +1,6 @@
+{
+  "name": "StayWise DC — The Airbnb Decision Engine",
+  "description": "Comprehensive decision engine helping Washington, DC homeowners evaluate legal eligibility, net revenue, operating costs, risk assessment, and alternatives before listing on Airbnb.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
